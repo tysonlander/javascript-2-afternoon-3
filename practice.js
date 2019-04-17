@@ -177,7 +177,15 @@ each(names, function(item, indice){
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-function 
+function getUserById(users, id, callback) {
+  for(i = 0; i < users.length; i++){
+    if(id === users[i].id){
+      callback(users[i]);
+    }
+  }
+  // check if passed in id is equal to one of the users id
+  // if found invoke the cb with the user object as the argument
+}
 
 // Code here
 
